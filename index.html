@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Hero Section Page</title>
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <h2 class="logo">IVAN SPASIC</h2>
+        <div class="toggle"></div>
+      </header>
+
+      <!-- <video src="https://res.cloudinary.com/moyadev/video/upload/v1609928965/Moyadev/beach.mp4" muted loop autoplay></video> -->
+
+      <video src="VIDEO/video.mp4" muted loop autoplay></video>
+
+      <div class="overlay"></div>
+
+      <div class="text">
+        <h2>Simple Life</h2>
+        <h3>Save Your Money</h3>
+        <p>
+          Enjoy your simple life, save your money, invest it wisely and don't
+          lose your money. That's how you get richer every day. ~ Warren Buffet
+        </p>
+        <a href="https://moyahexagon.com">Learn more</a>
+      </div>
+
+      <ul class="social">
+        <li>
+          <a href="#"><img src="icons8-instagram-24.png" alt="Instagram" /></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/hidayatabisena"
+            ><img src="icons8-twitter-24.png" alt="Twitter"
+          /></a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/channel/UCFKW8GKlVuon_OzOpZfSh7w"
+            ><img src="icons8-youtube-24.png" alt="Youtube"
+          /></a>
+        </li>
+      </ul>
+    </section>
+
+    <div class="menu">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
